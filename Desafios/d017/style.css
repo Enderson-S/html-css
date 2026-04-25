@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 150px 50px 1fr 50px;
+    grid-template-columns: 1fr 200px;
+    gap: 10px;
+}
+
+.topo {
+    background-color: orange;
+    grid-area: 1 / 1 / 2 / -1;
+}
+
+.menu {
+    background-color: orange;
+    grid-area: 2 / 1 / 3 / -1;
+}
+
+.principal {
+    background-color: orange;
+    grid-area: 3 / 1 / -2 / -2;
+}
+
+.secundario {
+    background-color: orange;
+    grid-area: 3 / 2 / -2 / -1;
+}
+
+.rodape {
+    background-color: orange;
+    grid-area: 4 / 1 / -1 / -1;
+}
